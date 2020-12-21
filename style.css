@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: #d3b8ae;
+}
+/*header*/
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+header img {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+}
+
+/*main content*/
+
+.trableContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 200px;
+}
+
+/*hukuoka*/
+
+#hukuoka {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  border-radius: 10%;
+  background-color: #c5e1a5;
+}
+
+#hukuoka span {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.trablelist__text {
+  padding: 50px 50px 0px 50px;
+}
+
+.trablelist__text li {
+  padding-bottom: 20px;
+}
+
+/*osaka*/
+#osaka {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  border-radius: 10%;
+  background-color: #c5e1a5;
+}
+
+#osaka span {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+/*sapporo*/
+#sapporo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  border-radius: 10%;
+  background-color: #c5e1a5;
+}
+
+#sapporo span {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.travel__img {
+  z-index: -2;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.travel__img img {
+  width: 100vw;
+  height: 100vh;
+}
+
+#hukuoka > span:hover + .travel__img {
+  opacity: 1;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+  transition: opacity 1000ms ease;
+}
+
+#osaka > span:hover + .travel__img {
+  opacity: 1;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+  transition: opacity 1000ms ease;
+}
+#sapporo > span:hover + .travel__img {
+  opacity: 1;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+  transition: opacity 1000ms ease;
+}
